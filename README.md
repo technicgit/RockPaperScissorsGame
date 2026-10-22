@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-A Java console game created as a Day 4 exercise for a QA Automation Bootcamp. The player selects rock, paper, or scissors, and the computer makes a random choice. The program compares the choices and displays the outcome.
+A Java console game where the player competes against a randomly generated computer choice. The program validates the player's selection, compares the moves, and displays the outcome.
 
 ## How to Play
 
@@ -36,7 +36,7 @@ Computer wins :c
 - Determines a draw, player win, or computer win.
 - Plays one round per run.
 
-## Java Concepts Practiced
+## Implementation Details
 
 - Imports and standard Java classes: `Scanner` and `Random`.
 - Variables and the `int` data type.
@@ -50,16 +50,18 @@ Computer wins :c
 
 `nextInt(3)` generates 0, 1, or 2. The upper bound, 3, is excluded.
 
-## How to Run in Eclipse
+## How to Run
 
-You need a Java Development Kit (JDK) configured in Eclipse IDE for Java Developers. No external libraries are required.
+Requires a Java Development Kit (JDK), with `java` and `javac` available in your terminal. No external libraries are required.
 
-1. Open your Java project in Eclipse.
-2. Create a package named `day4` under the source folder if it does not already exist.
-3. Save the source code in that package as `RockPaperScissors.java`. The file must begin with `package day4;`.
-4. Right-click `RockPaperScissors.java` and select **Run As > Java Application**.
-5. Enter `0`, `1`, or `2` in the Console and press Enter.
-6. Read the outcome. Run the program again to play another round.
+From the directory containing `RockPaperScissors.java`, compile and run:
+
+```sh
+javac -d out RockPaperScissors.java
+java -cp out day4.RockPaperScissors
+```
+
+The run command uses the package declared in the source file. Enter `0`, `1`, or `2` when prompted and press Enter. Run the program again to play another round.
 
 ## Example Round
 
